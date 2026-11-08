@@ -26,15 +26,8 @@ const USAGE_TTL_MS = 20_000;
  */
 const SKIN_CSS = {
   glass: [
-    'html{background:radial-gradient(1200px 820px at 8% -12%, #dbe7f7 0%, rgba(219,231,247,0) 62%),'
-      + 'radial-gradient(900px 700px at 100% -5%, #e6eef9 0%, rgba(230,238,249,0) 58%),'
-      + 'radial-gradient(1100px 900px at 55% 112%, #e3eaf3 0%, rgba(227,234,243,0) 62%), #f2f6fb;'
-      + 'background-attachment:fixed}',
-    'html:has(body[data-ds-dark-theme]){background:'
-      + 'radial-gradient(1200px 820px at 8% -12%, #17222f 0%, rgba(23,34,47,0) 62%),'
-      + 'radial-gradient(900px 700px at 100% -5%, #141c27 0%, rgba(20,28,39,0) 58%),'
-      + 'radial-gradient(1100px 900px at 55% 112%, #101823 0%, rgba(16,24,35,0) 62%), #0b1017;'
-      + 'background-attachment:fixed}',
+    'html{background:radial-gradient(1200px 820px at 10% -10%, #c9ecf6 0%, rgba(201,236,246,0) 62%),radial-gradient(900px 700px at 100% 0%, #dff4fa 0%, rgba(223,244,250,0) 58%),radial-gradient(1100px 900px at 50% 115%, #a8d6e6 0%, rgba(168,214,230,0) 62%), #cfe9f2;background-attachment:fixed}',
+    'html:has(body[data-ds-dark-theme]){background:radial-gradient(1200px 820px at 10% -10%, #0b2f40 0%, rgba(11,47,64,0) 62%),radial-gradient(900px 700px at 100% 0%, #08202c 0%, rgba(8,32,44,0) 58%),radial-gradient(1100px 900px at 50% 115%, #04141d 0%, rgba(4,20,29,0) 62%), #061a24;background-attachment:fixed}',
     'body{background:transparent !important}',
     // Blur lives on a pseudo-element: `backdrop-filter` on the root would become the
     // containing block for the Windows titlebar toggle (`position: fixed`) and hide it.
@@ -42,14 +35,14 @@ const SKIN_CSS = {
       + 'box-shadow:inset -1px 0 0 rgba(255,255,255,0.38), inset 0 1px 0 rgba(255,255,255,0.32)}',
     '.wtg9ga_root::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;'
       + 'background:var(--dsw-specific-sidebar-fill);'
-      + 'backdrop-filter:blur(30px) saturate(180%) brightness(1.06);'
-      + '-webkit-backdrop-filter:blur(30px) saturate(180%) brightness(1.06)}',
+      + 'backdrop-filter:blur(34px) saturate(190%) brightness(1.04);'
+      + '-webkit-backdrop-filter:blur(34px) saturate(190%) brightness(1.04)}',
     '.wtg9ga_root::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;'
-      + 'background:linear-gradient(155deg, rgba(255,255,255,0.42), rgba(255,255,255,0) 42%)}',
+      + 'background:linear-gradient(155deg, rgba(255,255,255,0.48), rgba(255,255,255,0) 44%)}',
     'body[data-ds-dark-theme] .wtg9ga_root{box-shadow:inset -1px 0 0 rgba(255,255,255,0.08), inset 0 1px 0 rgba(255,255,255,0.06)}',
-    'body[data-ds-dark-theme] .wtg9ga_root::before{backdrop-filter:blur(30px) saturate(170%) brightness(0.92);'
-      + '-webkit-backdrop-filter:blur(30px) saturate(170%) brightness(0.92)}',
-    'body[data-ds-dark-theme] .wtg9ga_root::after{background:linear-gradient(155deg, rgba(255,255,255,0.10), rgba(255,255,255,0) 42%)}',
+    'body[data-ds-dark-theme] .wtg9ga_root::before{backdrop-filter:blur(34px) saturate(180%) brightness(0.9);'
+      + '-webkit-backdrop-filter:blur(34px) saturate(180%) brightness(0.9)}',
+    'body[data-ds-dark-theme] .wtg9ga_root::after{background:linear-gradient(155deg, rgba(140,225,245,0.12), rgba(140,225,245,0) 44%)}',
   ].join('\n'),
 };
 
