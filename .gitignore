@@ -1,0 +1,6 @@
+node_modules/
+*.log
+*.tmp
+yg-usage-cache.json
+.DS_Store
+Thumbs.db

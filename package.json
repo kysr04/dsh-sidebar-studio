@@ -1,0 +1,54 @@
+{
+  "name": "dsh-sidebar-studio",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Frosted-glass sidebar skin for DeepSeek Harness, plus a session activity pill, session-ID copy button and a token usage panel built from local session logs.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sidebar",
+    "theme",
+    "glass",
+    "usage",
+    "tokens"
+  ],
+  "license": "MIT",
+  "author": "kysr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kysr/dsh-sidebar-studio.git"
+  },
+  "homepage": "https://github.com/kysr/dsh-sidebar-studio#readme",
+  "bugs": {
+    "url": "https://github.com/kysr/dsh-sidebar-studio/issues"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib/client.js",
+    "lib/skins.json",
+    "lib/usage.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
