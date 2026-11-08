@@ -38,9 +38,10 @@ const SKIN_CSS = {
     'body{background:transparent !important}',
     // Blur lives on a pseudo-element: `backdrop-filter` on the root would become the
     // containing block for the Windows titlebar toggle (`position: fixed`) and hide it.
-    '.wtg9ga_root{position:relative;isolation:isolate;backdrop-filter:none;-webkit-backdrop-filter:none;'
+    '.wtg9ga_root{position:relative;isolation:isolate;background:transparent !important;backdrop-filter:none;-webkit-backdrop-filter:none;'
       + 'box-shadow:inset -1px 0 0 rgba(255,255,255,0.38), inset 0 1px 0 rgba(255,255,255,0.32)}',
     '.wtg9ga_root::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;'
+      + 'background:var(--dsw-specific-sidebar-fill);'
       + 'backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%)}',
     'body[data-ds-dark-theme] .wtg9ga_root{box-shadow:inset -1px 0 0 rgba(255,255,255,0.08), inset 0 1px 0 rgba(255,255,255,0.06)}',
   ].join('\n'),
