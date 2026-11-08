@@ -26,8 +26,8 @@ const USAGE_TTL_MS = 20_000;
  */
 const SKIN_CSS = {
   glass: [
-    'html{background:radial-gradient(1200px 820px at 10% -10%, #c9ecf6 0%, rgba(201,236,246,0) 62%),radial-gradient(900px 700px at 100% 0%, #dff4fa 0%, rgba(223,244,250,0) 58%),radial-gradient(1100px 900px at 50% 115%, #a8d6e6 0%, rgba(168,214,230,0) 62%), #cfe9f2;background-attachment:fixed}',
-    'html:has(body[data-ds-dark-theme]){background:radial-gradient(1200px 820px at 10% -10%, #0b2f40 0%, rgba(11,47,64,0) 62%),radial-gradient(900px 700px at 100% 0%, #08202c 0%, rgba(8,32,44,0) 58%),radial-gradient(1100px 900px at 50% 115%, #04141d 0%, rgba(4,20,29,0) 62%), #061a24;background-attachment:fixed}',
+    'html{background:radial-gradient(1200px 820px at 10% -10%, #bfeee8 0%, rgba(191,238,232,0) 62%),radial-gradient(900px 700px at 100% 0%, #d9f6f1 0%, rgba(217,246,241,0) 58%),radial-gradient(1100px 900px at 50% 115%, #7fd3cb 0%, rgba(127,211,203,0) 62%), #cdeee9;background-attachment:fixed}',
+    'html:has(body[data-ds-dark-theme]){background:radial-gradient(1200px 820px at 10% -10%, #0a3b3f 0%, rgba(10,59,63,0) 62%),radial-gradient(900px 700px at 100% 0%, #063134 0%, rgba(6,49,52,0) 58%),radial-gradient(1100px 900px at 50% 115%, #02181b 0%, rgba(2,24,27,0) 62%), #052225;background-attachment:fixed}',
     'body{background:transparent !important}',
     // Blur lives on a pseudo-element: `backdrop-filter` on the root would become the
     // containing block for the Windows titlebar toggle (`position: fixed`) and hide it.
@@ -38,11 +38,11 @@ const SKIN_CSS = {
       + 'backdrop-filter:blur(34px) saturate(190%) brightness(1.04);'
       + '-webkit-backdrop-filter:blur(34px) saturate(190%) brightness(1.04)}',
     '.wtg9ga_root::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;'
-      + 'background:linear-gradient(155deg, rgba(255,255,255,0.48), rgba(255,255,255,0) 44%)}',
+      + 'background:linear-gradient(155deg, rgba(255,255,255,0.44), rgba(255,255,255,0) 46%)}',
     'body[data-ds-dark-theme] .wtg9ga_root{box-shadow:inset -1px 0 0 rgba(255,255,255,0.08), inset 0 1px 0 rgba(255,255,255,0.06)}',
     'body[data-ds-dark-theme] .wtg9ga_root::before{backdrop-filter:blur(34px) saturate(180%) brightness(0.9);'
       + '-webkit-backdrop-filter:blur(34px) saturate(180%) brightness(0.9)}',
-    'body[data-ds-dark-theme] .wtg9ga_root::after{background:linear-gradient(155deg, rgba(140,225,245,0.12), rgba(140,225,245,0) 44%)}',
+    'body[data-ds-dark-theme] .wtg9ga_root::after{background:linear-gradient(155deg, rgba(150,240,225,0.14), rgba(150,240,225,0) 46%)}',
   ].join('\n'),
 };
 
