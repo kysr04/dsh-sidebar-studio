@@ -42,8 +42,14 @@ const SKIN_CSS = {
       + 'box-shadow:inset -1px 0 0 rgba(255,255,255,0.38), inset 0 1px 0 rgba(255,255,255,0.32)}',
     '.wtg9ga_root::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;'
       + 'background:var(--dsw-specific-sidebar-fill);'
-      + 'backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%)}',
+      + 'backdrop-filter:blur(30px) saturate(180%) brightness(1.06);'
+      + '-webkit-backdrop-filter:blur(30px) saturate(180%) brightness(1.06)}',
+    '.wtg9ga_root::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;'
+      + 'background:linear-gradient(155deg, rgba(255,255,255,0.42), rgba(255,255,255,0) 42%)}',
     'body[data-ds-dark-theme] .wtg9ga_root{box-shadow:inset -1px 0 0 rgba(255,255,255,0.08), inset 0 1px 0 rgba(255,255,255,0.06)}',
+    'body[data-ds-dark-theme] .wtg9ga_root::before{backdrop-filter:blur(30px) saturate(170%) brightness(0.92);'
+      + '-webkit-backdrop-filter:blur(30px) saturate(170%) brightness(0.92)}',
+    'body[data-ds-dark-theme] .wtg9ga_root::after{background:linear-gradient(155deg, rgba(255,255,255,0.10), rgba(255,255,255,0) 42%)}',
   ].join('\n'),
 };
 
