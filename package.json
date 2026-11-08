@@ -1,6 +1,6 @@
 {
   "name": "dsh-sidebar-studio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "type": "module",
   "description": "Frosted-glass sidebar skin for DeepSeek Harness, plus a session activity pill, session-ID copy button and a token usage panel built from local session logs.",
@@ -45,7 +45,9 @@
     "LICENSE"
   ],
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "immediately": true
