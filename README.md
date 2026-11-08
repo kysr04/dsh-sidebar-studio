@@ -5,7 +5,7 @@ DeepSeek Harness 侧栏的一体化改造：毛玻璃皮肤 + 会话活动胶囊
 不改结构、不改业务逻辑，全部落在官方扩展席位上，卸载即还原。
 
 ```bash
-dsh plugin add github:kysr/dsh-sidebar-studio
+dsh plugin add github:kysr04/dsh-sidebar-studio
 ```
 
 ## 能力
@@ -22,7 +22,7 @@ dsh plugin add github:kysr/dsh-sidebar-studio
 
 ```bash
 # GitHub 直装
-dsh plugin add github:kysr/dsh-sidebar-studio
+dsh plugin add github:kysr04/dsh-sidebar-studio
 
 # 本地开发（链接目录）
 dsh plugin add link:/absolute/path/to/dsh-sidebar-studio

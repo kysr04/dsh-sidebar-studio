@@ -18,11 +18,11 @@
   "author": "kysr",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kysr/dsh-sidebar-studio.git"
+    "url": "git+https://github.com/kysr04/dsh-sidebar-studio.git"
   },
-  "homepage": "https://github.com/kysr/dsh-sidebar-studio#readme",
+  "homepage": "https://github.com/kysr04/dsh-sidebar-studio#readme",
   "bugs": {
-    "url": "https://github.com/kysr/dsh-sidebar-studio/issues"
+    "url": "https://github.com/kysr04/dsh-sidebar-studio/issues"
   },
   "main": "./index.js",
   "exports": {
